@@ -8,6 +8,7 @@ var (
 	varStringName     string
 	// Cmd describes a template command.
 	Cmd       = cobrax.NewCommand("template")
+	// this is very interesting,it can generate a template project.
 	initCmd   = cobrax.NewCommand("init", cobrax.WithRunE(genTemplates))
 	cleanCmd  = cobrax.NewCommand("clean", cobrax.WithRunE(cleanTemplates))
 	updateCmd = cobrax.NewCommand("update", cobrax.WithRunE(updateTemplates))
