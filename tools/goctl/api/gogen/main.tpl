@@ -8,7 +8,7 @@ import (
 )
 
 var configFile = flag.String("f", "etc/{{.serviceName}}.yaml", "the config file")
-
+// I'm confused, isn't this a go language file
 func main() {
 	flag.Parse()
 
